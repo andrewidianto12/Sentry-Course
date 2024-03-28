@@ -1,7 +1,7 @@
 <script setup>
 const checkout = ()=>{
-  // throw new Error("checkout is not implemented ")
-  alert("checking out items!");
+  throw new Error("checkout is not implemented ")
+  // alert("checking out items!");
 }
 </script>
 

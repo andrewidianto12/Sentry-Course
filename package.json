@@ -9,6 +9,7 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
+    "@sentry/browser": "^7.108.0",
     "@sentry/tracing": "^7.108.0",
     "@sentry/vue": "^7.108.0",
     "vite-plugin-sentry": "^1.4.0",

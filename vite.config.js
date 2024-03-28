@@ -7,35 +7,33 @@ const path = require("path");
 
 require("dotenv").config({ path: path.resolve(__dirname, ".env.local") });
 
-//source maps 1 error
-// const viteSentryConfig = {
-//   authToken: process.env.SENTRY_AUTH_TOKEN,
-//   org:"pribadi-3b",
-//   project: "sentry-course",
-//   release :`${process.env.npm_package_name}@${process.env.npm_package_version}`,
-//   setCommits: {},
-//   sourceMaps : {
-//     include: ["./dist/assets"],
-//     ignore: ["node_modules"],
-//     urlPrefix: "~/assets",
-//   },
-// };
+// source maps 1 error
 const viteSentryConfig = {
   authToken: process.env.SENTRY_AUTH_TOKEN,
-  org: "pribadi-3b",
+  org:"pribadi-3b",
   project: "sentry-course",
-  release: `${process.env.npm_package_name}@${process.env.npm_package_version}`,
-  setCommits: {
-    auto: true,
-    repo:'...',
-    commit:'...'
-  },
-  sourceMaps: {
+  release :`${process.env.npm_package_name}@${process.env.npm_package_version}`,
+  setCommits: {},
+  sourceMaps : {
     include: ["./dist/assets"],
     ignore: ["node_modules"],
     urlPrefix: "~/assets",
   },
 };
+// const viteSentryConfig = {
+//   authToken: process.env.SENTRY_AUTH_TOKEN,
+//   org: "pribadi-3b",
+//   project: "sentry-course",
+//   release: `${process.env.npm_package_name}@${process.env.npm_package_version}`,
+//   setCommits: {
+//     auto: true,
+//   },
+//   sourceMaps: {
+//     include: ["./dist/assets"],
+//     ignore: ["node_modules"],
+//     urlPrefix: "~/assets",
+//   },
+// };
 
 // https://vitejs.dev/config/
 export default defineConfig({
