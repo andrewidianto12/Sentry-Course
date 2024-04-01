@@ -16,6 +16,7 @@ Sentry.init({
     transport: Sentry.makeBrowserOfflineTransport(Sentry.makeFetchTransport),
     transportOptions: {
       // Caching options, e.g. maxQueueSize.
+      // auto delete 5 minute
       autoDeleteAfter: 300000 ,
     },
     integrations: [
